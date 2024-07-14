@@ -1,0 +1,7 @@
+parameters:
+  appName:
+    default: ska-example-app
+    validation: "^[a-zA-Z0-9-]{6,16}$"
+  testFileName:
+    default: example-file
+    
