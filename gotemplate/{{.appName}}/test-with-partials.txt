@@ -1,0 +1,22 @@
+This is an example
+file.
+
+# ska-start:part-01
+this is a managed partial
+of
+3 lines
+# ska-end
+
+this is an unmanaged part
+
+# ska-start:part-02
+this is a partial with a list formed by string by using go template
+
+{{ $parts := splitList "," .listOfItems }}
+{{ range $index, $part := $parts }}
+* Part {{ $index }}: {{ $part }}
+{{ end }}
+
+# ska-end
+
+this is remaining part

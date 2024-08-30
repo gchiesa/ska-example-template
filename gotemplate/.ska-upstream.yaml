@@ -1,0 +1,23 @@
+ignorePaths:
+- .git
+- .idea
+
+inputs:
+- placeholder: appName
+  label: Application Name
+  regexp: "^[a-zA-Z0-9_-]*$"
+  help: The name of the application
+  default: "test-app"
+
+- placeholder: testFileName
+  label: Test File Name
+  help: The name of the test file
+  default: "example"
+
+- placeholder: listOfItems
+  label: List of Items
+  default: "one,two,three"
+
+- placeholder: newVersion
+  label: New Version
+  help: The new version of the application
