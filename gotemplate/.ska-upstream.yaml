@@ -2,6 +2,12 @@ ignorePaths:
 - .git
 - .idea
 
+skaConfig:
+  ignorePaths:
+  - "idea/*"
+  - test-file-to-be-ignored-{{.testFileName}}.txt
+  - "*.ignored"
+
 inputs:
 - placeholder: appName
   label: Application Name
@@ -20,4 +26,5 @@ inputs:
 
 - placeholder: newVersion
   label: New Version
+  minLength: 5
   help: The new version of the application

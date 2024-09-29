@@ -1,0 +1,3 @@
+this is a simple file test for the app {{.appName}}
+
+and it should end up in the ignore files.
